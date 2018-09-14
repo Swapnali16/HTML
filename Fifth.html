@@ -1,0 +1,48 @@
+<!-- HTML Classes -->
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>TITLE</title>
+  <style>
+    .city        <!-- CLASS name is case sensitive-->
+	{
+	  background-color: tomato;
+	  color:black;
+	  font-family:times new roman;
+	  font-size:50px;
+	}
+  </style>
+  <style>
+  #Header
+  {
+    background-color:yellow;
+	color:tomato;
+	font-size:30px;
+	text-align:left;
+  }
+  </style>
+ </head>
+ <body>
+  <h1 style="color:blue;"><i>WELCOME TO CITY CLASS</i></h1>
+   <button onclick="myFunction();">CLICK HERE</button>
+   <h2 class="city">Delhi</h2>
+   <p>Delhi is a capital of India.</p>   
+   <h2 class="city">Pune</h2>
+   <p>Pune is one of the biggest city in India.</p>
+   <h2 class="city">Nagpur</h2>
+   <p>Nagpur is also called as <strong>green</strong> city.</p>
+   
+   <script>
+	function myFunction() 
+	{
+	  var a = document.getElementsByClassName("city");
+	  for (var i = 0; i < a.length; i++) 
+	  {
+		a[i].style.display = "none";
+	  }
+	}
+</script>
+  <h2 id="Header">WELCOME TO HTML</h2>
+ </body>
+</html>
